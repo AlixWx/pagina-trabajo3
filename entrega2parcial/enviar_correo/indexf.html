@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset= "UTF-8">
+	<META name= "viewport" content="width=device width, initial sacale=1.0">
+	<title> formulario de contacto</title>
+	<link rel="stylesheet" type="text/css" href="estilosform.css">
+</head>
+<body>
+<div id="agrupar">
+   <header id="cabecera">
+      <img id="logoimg" src="../imgtarea/logo2.png" >
+        <h1 id="logo">F anime</h1>
+
+   </header>
+   <nav id="menu">
+       <ul>
+           <li><a href="../index.html">Principal</a></li>
+           <li><a href="../hojas/video.html">Videos</a></li>
+           <li><a href="../hojas/imagenes.html">Imagenes</a></li>
+           <li><a href="../enviar_correo/indexf.html">Contacto</a></li>
+       </ul>
+   </nav>
+	
+	<form action="enviar_local.php" method="post">
+		<h2>Contacto</h2>
+		<input type="text" name="nombre" placeholder="nombre">
+	    <input type="email" name="correo" placeholder="correo">
+        <input pattern="[0-9]{10}" id="telefono" name="telefono" placeholder="inserte los 10 números de su numero telefonico">
+        <textarea name="mensaje" placeholder="Escriba aqui su mensaje"></textarea>
+        <input type="submit" value="ENVIAR" id="boton" >
+	</form>
+</body>
+</html>
